@@ -23,5 +23,3 @@ CREATE TABLE Party (
 ;
 
 
-INSERT INTO contact(firstName,lastName, phone ) VALUES ('Kath', 'Evans', '07790381432'), ( 'Mark', 'Evans', '07799611737');
-
