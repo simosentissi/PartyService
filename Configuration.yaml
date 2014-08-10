@@ -1,0 +1,8 @@
+message: This is a message defined in the configuration file config.yaml.
+messageRepetitions: 3
+database:
+
+   driverClass: org.postgresql.Driver
+   url: jdbc:postgresql://localhost/party
+   user: partyuser
+   password: PartyUser

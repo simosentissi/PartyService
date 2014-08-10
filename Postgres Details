@@ -1,0 +1,27 @@
+sudo -u postgres psql 
+
+create database party;
+\connect party;
+create user partyuser;
+
+\password PartyUser
+
+//create a password of "PartyUser"
+
+CREATE SEQUENCE AutoInc_Seq; 
+GRANT ALL ON autoinc_seq to partyuser;
+ 
+
+
+CREATE TABLE Party (
+   id INTEGER PRIMARY KEY DEFAULT NEXTVAL('autoinc_seq'),
+   firstName VARCHAR(255) NOT NULL,
+   lastName VARCHAR(255) NOT NULL,
+   email VARCHAR(255) NOT NULL,
+   phone varchar(30) NOT NULL
+)
+;
+
+
+INSERT INTO contact(firstName,lastName, phone ) VALUES ('Kath', 'Evans', '07790381432'), ( 'Mark', 'Evans', '07799611737');
+
